@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../src/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("../src/img/wallpaper.jpg");
+            padding: 170px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entrevista</title>
+</head>
+<body class="bg">
+    <div class="container" style="background-color:rgba(233, 233, 233, 0.67); border-radius: 10px; padding:20px; width:500px; height: 500px;">
+        
+
+        <h2 style="text-align: center;">Digite um numero: </h2>
+        
+        <div class="form-group">
+            <input type="number" id="InputNumero" maxlength="18" class="form-control" onkeypress="return Onlynumbers(event)"/>
+        </div>
+
+        <button class="btn btn-block btn-primary" onclick="getNumber()">Visualizar numero por extenso</button>
+        <br>
+        <h3 id="lblExibir" style="text-align: center;"></h3>
+    </div>
+</body>
+</html>
